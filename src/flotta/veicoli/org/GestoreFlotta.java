@@ -21,4 +21,25 @@ public class GestoreFlotta {
         return contatore;
     }
 
+    // TOSTRING
+
+    @Override
+    public String toString() {
+        return "GestoreFlotta{" +
+                "veicoli=" + veicoli +
+                '}';
+    }
+
+    // METODO PER TROVARE IL VEICOLO
+    public Veicoli trovaTarga(String targa){
+        Veicoli found = null;
+        for (Veicoli auto: veicoli) {
+            if (auto.getNumeroDiTarga().equals(targa)){
+                found = auto;
+            }
+        }
+        return found;
+    }
+
+
 }

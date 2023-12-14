@@ -9,5 +9,7 @@ public class Main {
         gestore.addVeicolo(moto1);
         System.out.println(gestore.contaVeicoli(Automobili.class));
         System.out.println(gestore.contaVeicoli(Motociclette.class));
+
+        System.out.println(gestore.trovaTarga("8HJKFR6"));
     }
 }
